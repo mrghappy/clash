@@ -142,7 +142,7 @@ func compose(middlewares []middleware, endpoint handler) handler {
 	return h
 }
 
-func newHandler(resolver *Resolver) handler {
+func NewHandler(resolver *Resolver) handler {
 	middlewares := []middleware{}
 
 	if resolver.hosts != nil {
