@@ -35,6 +35,7 @@ var (
 	httpMux  sync.Mutex
 	redirMux sync.Mutex
 	mixedMux sync.Mutex
+	tunMux   sync.Mutex
 )
 
 type Ports struct {
